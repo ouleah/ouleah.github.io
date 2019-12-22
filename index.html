@@ -47,5 +47,15 @@ Definitions
   <p> Span of any set of vectors is a valid subspace (try proving) </p>
   <p> The basis of a subspace {v} is the set of vectors that span {v} and that are linearly independent. This is the minimum
     vectors you need to span the subspace {v}.
+    
+  <h2> Dijkstras </h2>
+  <p> Tries to find the shortest path between two nodes on a graph. </p>
+  <p> Each edge has a cost for traveling it. When starting at node A, you have the cost of going to each node because of the 
+    cost for each edge. You go to the edge with the least cost and record what the cost is. Then, from the second node, you 
+    find the cost of all of the other edge options you currently have and again go the route with the least cost. Add it to 
+    the first cost. </p>
+  <p> Keep going until you reach the node you want to end at. </p>
+  Wikipedia has a nice <a  href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#/media/File:Dijkstra_Animation.gif">visual</a>
+
 
 </html>
