@@ -22,7 +22,12 @@ Definitions
   which can be graphed. When you graph all possible linear combinations, you have the span.
   <p> Example 2: {[2  3], [4  6] is linearly dependent, but {[2  3], [1  0]} is not. </p>
   <p> If you wan to show that any vector in, say R^2, can be represented as your set of vectors, you would set [x y] 
-    = {your set of vectors * coefficients}. Then you would know whether or not your set spans R^2.
+    = {your set of vectors * coefficients}. Then you would know whether or not your set spans R^2. </p>
+  <p> {v} is a subspace of R^n if (1) v contains the 0 vector, (2) if x is in {v}, cx is in {v} (closure under scalar
+    multiplication and (3) if x and y in {v}, then x + y in {v} (closure under addition). </p>
+  <p> Span of any set of vectors is a valid subspace (try proving) </p>
+  <p> The basis of a subspace {v} is the set of vectors that span {v} and that are linearly independent. This is the minimum
+    vectors you need to span the subspace {v}. </p>
 
   <h3> Questions </h3>
   <p> How can you tell if vectors span R^n by their graph? If they're showing different directions? </p>
@@ -42,11 +47,7 @@ Definitions
     vector on that plane, those 3 vectors are now dependent bc you can represent the third vector with the first two bc the first two
     span R^2. So to be independent, the third vector must be on a different plane. Now all 3 vectors span R^3. </p>
 
-  <p> {v} is a subspace of R^n if (1) v contains the 0 vector, (2) if x is in {v}, cx is in {v} (closure under scalar
-    multiplication and (3) if x and y in {v}, then x + y in {v} (closure under addition). </p>
-  <p> Span of any set of vectors is a valid subspace (try proving) </p>
-  <p> The basis of a subspace {v} is the set of vectors that span {v} and that are linearly independent. This is the minimum
-    vectors you need to span the subspace {v}.
+
     
   <h2> Dijkstras </h2>
   <p> Tries to find the shortest path between two nodes on a graph. </p>
