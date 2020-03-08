@@ -7,43 +7,6 @@
 <a href="./intro.html">intro</a>
   
   <h2> stuff below will be added to other pages once they're pretty much done </h2>
-  <h2> Linear Algebra Basics </h2>
-Definitions
-  <p> A vector gives a direction and magnitude. A <b> linear combination </b> is multiplying some real coefficient in R by a set of vectors
-    to get some combination of the set. A <b> span </b> is all possible linear combinations of a set of vectors.
-  </p>
-  <p> If you have a set of vectors {v1, v2, ...}, none of which are linear combinations of each other, they are <b> linearly independent </b>. 
-    If you can write on vector as a multiple of another vector, the set is linearly dependent.
-  </p>
-  <p> Example 1: If you have vectors v1, v2: { [3  -2], [5  4] }, one linear combination is </p>
-  <p> 2V1 + 3V2 = 2[3  -2] + 3[5  3] = [6  -4] + [15  9] = [21  5] </p> 
-  which can be graphed. When you graph all possible linear combinations, you have the span.
-  <p> Example 2: {[2  3], [4  6] is linearly dependent, but {[2  3], [1  0]} is not. </p>
-  <p> If you wan to show that any vector in, say R^2, can be represented as your set of vectors, you would set [x y] 
-    = {your set of vectors * coefficients}. Then you would know whether or not your set spans R^2. </p>
-  <p> {v} is a subspace of R^n if (1) v contains the 0 vector, (2) if x is in {v}, cx is in {v} (closure under scalar
-    multiplication and (3) if x and y in {v}, then x + y in {v} (closure under addition). </p>
-  <p> Span of any set of vectors is a valid subspace (try proving) </p>
-  <p> The basis of a subspace {v} is the set of vectors that span {v} and that are linearly independent. This is the minimum
-    vectors you need to span the subspace {v}. </p>
-
-  <h3> Questions </h3>
-  <p> How can you tell if vectors span R^n by their graph? If they're showing different directions? </p>
-  I found a great way: Imagine the vecotrs {[-1  -1], [1  1]}. Connect the tips of the vectors and turn that segment you're
-  imagining into a line (extened both ends to infinitiy). Now fix the line to the tip of one of the vectors, say [-1 1].
-  Now imagine the vector scaling down to 0 (like becoming a point). As you move [-1 1] to the origin, because the line is 
-  fixed to it, imagine the line following it. It would only be moving in the y = x direction, so the line isn't really 
-  changing. Thus, the vectors {[-1  -1], [1 1]} don't span R^2. If they did, they would cover the xy plane, not just be a line.
-  <p> However, imagine {[3  0], [0  -2]}. Connect the tips of the vectors with a segment and make that segment a line (push 
-    endpoints to infinity). Make the line fixed to the tip of v2 (or fixed to the point (0, -2)). Then shorten v2 by moving the
-    tip up to the origin as the line is fixed to it: observe that the line moves across the xy plane, AKA spanning R^2!
-  
-  <p> What does linear independence and dependence mean geometrically? </p>
-  <p> If two vectors are linearly dependent, they are on the same line (bc combination of each other), so either one spans the
-    whole line. To be linearly indepened, all must make their own line. </p>
-  <p> Now imagine 2 vectors in R^2 on the same plane. By above, they are independent and span that plane. If you add a third 
-    vector on that plane, those 3 vectors are now dependent bc you can represent the third vector with the first two bc the first two
-    span R^2. So to be independent, the third vector must be on a different plane. Now all 3 vectors span R^3. </p>
 
 
     
